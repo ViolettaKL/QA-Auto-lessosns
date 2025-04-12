@@ -82,6 +82,4 @@ public class MathOperations {
     public static double calculatePercentage(double total, double part){
         return (part / total) * 100;
     }
-    //Методы перевода температуры в Фаренгейты
-
 }
