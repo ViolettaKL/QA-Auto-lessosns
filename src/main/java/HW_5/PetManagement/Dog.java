@@ -1,6 +1,5 @@
 package HW_5.PetManagement;
 
-import Pet;
 
 public class Dog extends Pet {
     @Override
