@@ -2,23 +2,23 @@ package HW_FirstProgram;
 
 public class MathOperations {
 
-    public static void main(String[] args){
-        int add1 = add(3,34);
-        System.out.println("Сумма двух чисел равна " + add1);
+    public static void main(String[] args) {
+        int add1 = add(34, 6);
+        System.out.println("Сумму двух чисел равно " + add1);
 
-        int subtract1 = subtract(23,6);
-        System.out.println("Разность двух чисел равна " + subtract1);
+        int subtract1 = subtract(23, 5);
+        System.out.println("Разность двух чисел равно " + subtract1);
 
-        int multiply1 = multiply(4,3);
+        int multiply1 = multiply(45, 9);
         System.out.println("Произведение двух чисел равно " + multiply1);
 
-        double divide1 = divide(17,3);
-        System.out.println("Результат деления двух чисел равен " + divide1);
+        double divide1 = divide(12, 2);
+        System.out.println("Результат деления двух чисел равно " + divide1);
 
-        int findMax1 = findMax(5, 8);
+        int findMax1 = findMax(4, 6);
         System.out.println("Большее из двух чисел " + findMax1);
 
-        int difference1 = difference(67, 8);
+        int difference1 = difference(56, 23);
         System.out.println("Результат разницы между двумя числами " + difference1);
 
         int squareArea1 = squareArea(4);
@@ -27,59 +27,96 @@ public class MathOperations {
         int squarePerimeter1 = squarePerimeter(6);
         System.out.println("Периметр квадрата равен " + squarePerimeter1);
 
-        double convertSecondsToMinutes1 = convertSecondsToMinutes(34);
+        double convertSecondsToMinutes1 = convertSecondsToMinutes(120);
         System.out.println("Перевод минут в секундах равно " + convertSecondsToMinutes1);
 
-        double averageSpeed1 = averageSpeed(4,30);
-        System.out.println("Средняя скорость равна " + averageSpeed1);
+        double averageSpeed1 = averageSpeed(4, 30);
+        System.out.println("Среднее скорость равна " + averageSpeed1);
+
+        double findHypotenuse1 = findHypotenuse(2, 4);
+        System.out.println("Результат нахождения гипотенузы " + findHypotenuse1);
+
+        double circleCircumference1 = circleCircumference(2);
+        System.out.println("Длина окружности равно " + circleCircumference1);
+
+        double calculatePercentage1 = calculatePercentage(4, 2);
+        System.out.println("Процент от общего " + calculatePercentage1);
+
+        double celsiusToFahrenheit1 = celsiusToFahrenheit(3);
+        System.out.println("Температура по Фаренгейту равна " + celsiusToFahrenheit1);
+
+        double fahrenheitToCelsius1 = fahrenheitToCelsius(30);
+        System.out.println("Температура по Цельсию " + fahrenheitToCelsius1);
+
     }
 
-    public static int add(int x, int y){
+    public static int add(int x, int y) {
         return x + y;
     }
+
     public static int subtract(int x, int y) {
         return x - y;
     }
-    public static int multiply(int x, int y){
+
+    public static int multiply(int x, int y) {
         return x * y;
     }
+
     public static double divide(int x, int y) {
-        return (double) x / y;
+        return x / y;
     }
+
     //метод для нахождения максимума двух чисел
-    public static int findMax(int a, int b){
+    public static int findMax(int a, int b) {
         return Math.max(a, b);
     }
-    //Метод для нахождения разницы между двумя числами
-    public static int difference(int x, int y){
+
+    //метод нахождения разницы между двумя числами
+    public static int difference(int x, int y) {
         return Math.abs(x - y);
     }
-    //Метод для вычисления площади квадрата
-    public static int squareArea(int side){
+
+    //метод для вычисления площади квадрата
+    public static int squareArea(int side) {
         return side * side;
     }
-    //Метод для вычисления периметра квадрата
-    public static int squarePerimeter(int side){
+
+    //метод для вычисления периметра у квадрата
+    public static int squarePerimeter(int side) {
         return 4 * side;
     }
-    //Метод для перевода секунд в минуты
-    public static double convertSecondsToMinutes(int seconds){
+
+    // метод для перевода секунд в минуты
+    public static double convertSecondsToMinutes(int seconds) {
         return (double) seconds / 60.0;
     }
-    //Метод для вычисления средней скорости
-    public static double averageSpeed(double distance, double time){
+
+    //метод для вычисления средней скорости
+    public static double averageSpeed(double distance, double time) {
         return distance / time;
     }
-    //Метод для нахождения гипотенузы
-    public static  double findHypotenuse(double a, double b){
-        return Math.sqrt(a*a + b*b);
+
+    //метод для нахождения гипотенузы
+    public static double findHypotenuse(double a, double b) {
+        return Math.sqrt(a * a + b * b);
     }
-    //Метод для длины окружности
-    public static double circleCircumference(double radius){
+
+    //метод для длины окружности
+    public static double circleCircumference(double radius) {
         return 2 * Math.PI * radius;
     }
+
     //Метод для вычисления процентов
-    public static double calculatePercentage(double total, double part){
+    public static double calculatePercentage(double total, double part) {
         return (part / total) * 100;
     }
+    // метод для вычисления температуры по Фаренгейту
+    public static double celsiusToFahrenheit(double c){
+        return c * 9 / 5 + 32;
+    }
+    // метод для вычисления температуры по Цельсию
+    public static double fahrenheitToCelsius(double f){
+        return (f - 32) * 5 / 9;
+    }
+
 }

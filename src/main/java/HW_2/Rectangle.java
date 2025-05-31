@@ -4,24 +4,27 @@ public class Rectangle {
     int width;
     int height;
 
-    Rectangle(int someWight, int someHeight) {
-        this.width = someWight;
-        this.height = someHeight;
+    public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
     }
-    int getWight(){
-        return this.width;
+
+    public int getWidth() {
+        return width;
     }
-    int getHeight(){
-        return this.height;
+
+    public int getHeight() {
+        return height;
     }
-    int setWight(){
-        return this.width;
+
+    public void setWidth(int width) {
+        this.width = width;
     }
+
     int calculateArea(){
         return width * height;
     }
     void print(){
-        System.out.println("Ширина " + this.width + " Высота " + this.height);
+        System.out.println("Ширина: " + this.width + " Высота: " + this.height);
     }
 }
-

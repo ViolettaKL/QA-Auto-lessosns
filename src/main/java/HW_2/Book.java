@@ -2,26 +2,30 @@ package HW_2;
 
 public class Book {
     String title;
-    String autor;
+    String author;
 
-    Book(String someTitle, String someAutor){
-        this.title = someTitle;
-        this.autor = someAutor;
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
     }
 
-    String getTitle(){
-        return  this.title;
+    public String getTitle() {
+        return title;
     }
-    String getAutor(){
-        return  this.autor;
+
+    public void setTitle(String title) {
+        this.title = title;
     }
-    void setTitle(String newTitle){
-        this.title = newTitle;
+
+    public String getAuthor() {
+        return author;
     }
-    void setAutor(String newAutor){
-        this.autor = newAutor;
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
-    void printInfo() {
-        System.out.println("Название: " + this.title + ", Автор: " + this.autor);
+
+    void printInfo(){
+        System.out.println("Название: " + this.title + " Автор: " + this.author);
     }
 }

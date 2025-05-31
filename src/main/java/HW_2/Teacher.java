@@ -1,10 +1,10 @@
 package HW_2;
 
 public class Teacher {
-    public String name;
-    public String subject;
+    String name;
+    String subject;
 
-    Teacher(String name,String subject){
+    public Teacher(String name, String subject) {
         this.name = name;
         this.subject = subject;
     }
@@ -13,12 +13,12 @@ public class Teacher {
         return name;
     }
 
-    public String getSubject() {
-        return subject;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSubject() {
+        return subject;
     }
 
     public void setSubject(String subject) {

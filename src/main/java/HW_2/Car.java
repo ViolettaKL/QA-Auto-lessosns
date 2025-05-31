@@ -1,27 +1,31 @@
 package HW_2;
 
 public class Car {
-
     String brand;
     int year;
 
-    Car(int someYear, String someBrand) {
-        this.brand = someBrand;
-        this.year = someYear;
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
     }
-    String getBrand(){
-        return  this.brand;
+
+    public String getBrand() {
+        return brand;
     }
-    int getYear() {
-        return this.year;
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
-    void setYear(int newYear){
-        this.year = newYear;
+
+    public int getYear() {
+        return year;
     }
-    void setBrand(String newBrand) {
-        this.brand = newBrand;
+
+    public void setYear(int year) {
+        this.year = year;
     }
-    void print() {
-        System.out.println("Год выпуска " + this.year + ", Марка автомобиля " + this.brand);
+
+    void print(){
+        System.out.println("Год выпуска: " + this.year + " Модель: " + this.brand);
     }
 }

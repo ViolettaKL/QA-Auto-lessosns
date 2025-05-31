@@ -4,7 +4,7 @@ public class Point {
     int x;
     int y;
 
-    Point(int x1, int y1){
+    public Point(int x1, int y1) {
         this.x = x1;
         this.y = y1;
     }
@@ -21,6 +21,6 @@ public class Point {
         this.x = x;
     }
     void print(){
-        System.out.println("Координаты: " + "x:" + this.x + " y:" + this.y);
+        System.out.println("Координаты: " + "x " + this.x +  " y " + this.y);
     }
 }

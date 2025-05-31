@@ -3,8 +3,8 @@ package HW_2;
 public class Circle {
     double radius;
 
-    Circle(double someRadius){
-        this.radius = someRadius;
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
     public double getRadius() {
@@ -14,10 +14,11 @@ public class Circle {
     public void setRadius(double radius) {
         this.radius = radius;
     }
-    public double calculateArea() {
+    public double calculateArea(){
         return Math.PI * radius * radius;
     }
-    public double calculateCircumference() {
+
+    public double calculateCircumference(){
         return 2 * Math.PI * radius;
     }
 }
