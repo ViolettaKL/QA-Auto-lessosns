@@ -1,14 +1,12 @@
-package HW_5.PetManagement;
+package HW_5.PetManagment;
 
-
-public class Cat extends Pet {
+public class Cat extends Pet{
     @Override
-    void feed() {
+    void feed(){
         System.out.println("Кошка ест влажный корм");
     }
-
     @Override
-    void interact() {
+    void interact(){
         System.out.println("Кошка играет");
     }
 }

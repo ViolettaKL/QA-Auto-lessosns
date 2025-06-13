@@ -41,6 +41,7 @@ public class WhileTasks {
                 i++;
             }
         System.out.println("Факториал равен: " + result);
+        scanner.close();
     }
 
     //Вывод всех чётных чисел до заданного
@@ -68,7 +69,7 @@ public class WhileTasks {
                 System.out.println(i);
             }
             i++;
-        }
+        }scanner.close();
     }
 
     //Обратный отсчёт от введённого числа до 1
@@ -93,6 +94,6 @@ public class WhileTasks {
         while (number >= 1){
             System.out.println(number);
             number --;
-        }
+        }scanner.close();
     }
 }

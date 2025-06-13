@@ -12,7 +12,7 @@ public class MathOperations {
         int multiply1 = multiply(45, 9);
         System.out.println("Произведение двух чисел равно " + multiply1);
 
-        double divide1 = divide(12, 2);
+        double divide1 = divide(12.4, 2.3);
         System.out.println("Результат деления двух чисел равно " + divide1);
 
         int findMax1 = findMax(4, 6);
@@ -39,7 +39,7 @@ public class MathOperations {
         double circleCircumference1 = circleCircumference(2);
         System.out.println("Длина окружности равно " + circleCircumference1);
 
-        double calculatePercentage1 = calculatePercentage(4, 2);
+        double calculatePercentage1 = calculatePercentage(5, 2);
         System.out.println("Процент от общего " + calculatePercentage1);
 
         double celsiusToFahrenheit1 = celsiusToFahrenheit(3);
@@ -62,7 +62,7 @@ public class MathOperations {
         return x * y;
     }
 
-    public static double divide(int x, int y) {
+    public static double divide(double x, double y) {
         return x / y;
     }
 
@@ -108,8 +108,12 @@ public class MathOperations {
 
     //Метод для вычисления процентов
     public static double calculatePercentage(double total, double part) {
+        if (total == 0) {
+            throw new IllegalArgumentException("На 0 делить нельзя");
+        }
         return (part / total) * 100;
     }
+
     // метод для вычисления температуры по Фаренгейту
     public static double celsiusToFahrenheit(double c){
         return c * 9 / 5 + 32;
@@ -118,5 +122,4 @@ public class MathOperations {
     public static double fahrenheitToCelsius(double f){
         return (f - 32) * 5 / 9;
     }
-
 }

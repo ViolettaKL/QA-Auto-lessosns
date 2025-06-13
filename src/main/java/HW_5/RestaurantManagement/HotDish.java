@@ -1,6 +1,6 @@
 package HW_5.RestaurantManagement;
 
-public class HotDish implements Dish{
+public class HotDish  implements Dish{
     private int temperature;
 
     public HotDish(int temperature){

@@ -1,14 +1,17 @@
 package HW_3;
 
 public class Company {
-
-    static String companyName = "Netflix";
+    static String companyName;
     final int employeeID;
     String employeeName;
 
     public Company(int employeeID, String employeeName) {
         this.employeeID = employeeID;
         this.employeeName = employeeName;
+    }
+
+    public static void printCompanyName(){
+        System.out.println("Company name: " + companyName);
     }
 
     public String getEmployeeName() {
@@ -19,7 +22,4 @@ public class Company {
         this.employeeName = employeeName;
     }
 
-    public static void printCompanyName() {
-        System.out.println("Company Name: " + companyName);
-    }
 }

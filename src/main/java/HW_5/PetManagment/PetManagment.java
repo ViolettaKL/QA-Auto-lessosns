@@ -1,9 +1,9 @@
-package HW_5.PetManagement;
+package HW_5.PetManagment;
 
-public class PetManagement {
+public class PetManagment {
     private Pet pet;
 
-    public void setPet(Cat pet) {
+    public void setPet(Pet pet) {
         this.pet = pet;
     }
 

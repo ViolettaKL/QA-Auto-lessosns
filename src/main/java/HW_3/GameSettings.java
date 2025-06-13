@@ -1,24 +1,26 @@
 package HW_3;
 
 public class GameSettings {
-    static int maxPlayers = 50;
+    static int maxPlayers;
     final String gameName;
     int currentPlayers;
 
-    public GameSettings(String gameName) {
+    public GameSettings(String gameName, int currentPlayers) {
         this.gameName = gameName;
-        this.currentPlayers = 0;
+        this.currentPlayers = currentPlayers;
     }
-    public  static void setMaxPlayers(int max){
+
+    public static void setMaxPlayers(int max){
         maxPlayers = max;
     }
+
     public void addPlayer(){
-        if (currentPlayers < maxPlayers){
+        if(currentPlayers < maxPlayers){
             currentPlayers++;
         }
     }
-    public void printGameStatus(){
-        System.out.println("Наименование игры: " + gameName + " Игроков сейчас: " +
-                currentPlayers + " Максимальное количество игроков: " + maxPlayers);
-    }
+     public void printGameStatus(){
+         System.out.println("Наименование игры: " + gameName + ", Текущее количество игроков: " + currentPlayers
+                 + ", Максимальное количество игроков: " + maxPlayers);
+     }
 }

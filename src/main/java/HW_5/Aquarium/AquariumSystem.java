@@ -10,5 +10,4 @@ public class AquariumSystem {
     void move(){
         System.out.println(creature.move());
     }
-
 }
